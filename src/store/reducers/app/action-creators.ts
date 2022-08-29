@@ -6,8 +6,4 @@ export const appActionCreators = {
   setAuth: (isAuth: boolean) => async (dispatch: AppDispatch) => {
     dispatch(appActions.setAuth(isAuth));
   },
-
-  // setCurrEditContact: (contact: IContact) => async (dispatch: AppDispatch) => {
-  //   dispatch(appActions.setCurrEditContact(contact));
-  // },
 };

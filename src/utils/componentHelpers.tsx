@@ -15,7 +15,6 @@ export function setInputEventValue(
   setCb: Dispatch<SetStateAction<{}>>
 ) {
   return (value: React.ChangeEvent<HTMLInputElement>) => {
-    // console.log(`tag: ${tag}, value: ${value.target.value}`);
     setCb((prev) => ({ ...prev, ...{ [tag]: value.target.value } }));
   };
 }

@@ -1,6 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { IContact } from "api/fetchDataTypes";
-// import { appInitialState } from "initApp/init";
 
 export interface IAction<T> {
   payload: T;
@@ -9,7 +8,6 @@ export interface IAction<T> {
 
 const appInitialState = {
   isAuth: false,
-  // currEditContact: undefined as IContact | undefined,
 };
 
 export const appSlice = createSlice({
@@ -19,10 +17,6 @@ export const appSlice = createSlice({
     setAuth(state, action: IAction<boolean>) {
       state.isAuth = action.payload;
     },
-
-    // setCurrEditContact(state, action: IAction<IContact>) {
-    //   state.currEditContact = action.payload;
-    // },
   },
 });
 

@@ -19,7 +19,6 @@ export const ContactList = ({ params, onClick }: IContactListProps) => {
   const { contactsSetAll, contactsRemoveOne } = useActions();
 
   let resData = fetchAPI.useGetContactsQuery({
-    // params: { _page: 1, _limit: 5 },
     params,
   }) as IFetchResult<IContact[]>;
 
